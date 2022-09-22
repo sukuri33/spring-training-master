@@ -6,17 +6,16 @@ import org.springframework.beans.factory.annotation.Autowired;
 @Getter
 public abstract class Case {
 
-    private String model;
-    private String manufacturer;
-    private String powerSupply;
+    private final String model;
+    private final String manufacturer;
+    private final String powerSupply;
     @Autowired
     private Dimensions dimensions;
 
-    public Case(String model, String manufacturer, String powerSupply, Dimensions dimensions) {
+    public Case(String model, String manufacturer, String powerSupply) {
         this.model = model;
         this.manufacturer = manufacturer;
         this.powerSupply = powerSupply;
-        this.dimensions = dimensions;
     }
 
     public abstract void pressPowerButton();
