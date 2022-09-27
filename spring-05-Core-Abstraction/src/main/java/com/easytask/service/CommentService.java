@@ -20,6 +20,8 @@ public class CommentService {
                                                              //And you used @Primary annotation for "EmailCommentNotificationProxy" class to tell Spring avoid using the 2nd impl class
                                                              //then the other Service class would also use EmailProxy class.
                                                              //To address such concern we have @Qualifier annotation in Spring
+    //If there are more than one instance available for an injection point
+    //then use @Qualifier annotation to resolve an ambiguity for Spring
     public CommentService(CommentRepository commentRepository,@Qualifier("EMAIL") CommentNotificationProxy commentNotificationProxy) {
         this.commentRepository = commentRepository;
         this.commentNotificationProxy = commentNotificationProxy;
