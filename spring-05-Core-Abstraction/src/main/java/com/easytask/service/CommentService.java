@@ -13,7 +13,8 @@ public class CommentService {
     //#2 Scenario: sometimes you declare field and forgot to add them in the constructor argument, if you have a habit of using final keyword it would help you avoid such mistake
     private final CommentRepository commentRepository;
     private final CommentNotificationProxy commentNotificationProxy;
-
+                                                             //this might never be the case in the real world because you will always have one impl class for one interface.
+                                                             //but for interview purpose please remember below scenario:
                                                              //in the event that your 2nd implementation class of CommentNotificationProxy interface
                                                              //in this case it is "PushNotificationProxy", is needed for a different Service class
                                                              //And you used @Primary annotation for "EmailCommentNotificationProxy" class to tell Spring avoid using the 2nd impl class
