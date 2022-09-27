@@ -1,6 +1,6 @@
 package com.beanscopedemoapp.repo;
 
-import com.easytask.model.Comment;
+import com.beanscopedemoapp.model.Comment;
 
 public interface CommentRepository {
     void storeComment(Comment comment);

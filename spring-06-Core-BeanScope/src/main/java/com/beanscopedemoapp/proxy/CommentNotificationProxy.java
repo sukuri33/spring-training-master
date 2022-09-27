@@ -1,6 +1,6 @@
 package com.beanscopedemoapp.proxy;
 
-import com.easytask.model.Comment;
+import com.beanscopedemoapp.model.Comment;
 
 public interface CommentNotificationProxy {
     void sendComment(Comment comment);
