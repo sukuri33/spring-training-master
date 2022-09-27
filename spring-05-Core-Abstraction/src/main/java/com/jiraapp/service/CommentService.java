@@ -6,7 +6,7 @@ import com.jiraapp.proxy.EmailCommentNotificationProxy;
 import com.jiraapp.repository.CommentRepository;
 import com.jiraapp.repository.DBCommentRepository;
 
-public class CommentService {  //BREAK 2:15 PM ( 5MIN REVIEW )
+public class CommentService {
 
     private CommentRepository commentRepository;
     private CommentNotificationProxy commentNotificationProxy;
