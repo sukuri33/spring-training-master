@@ -21,6 +21,8 @@ public class SpringBootDemoApplication {
 
 		CommentService commentService = context.getBean(CommentService.class);
 		commentService.publishComment(comment);
+		commentService.printConfigData();
+		commentService.printDBConfigData();
 	}
 
 
